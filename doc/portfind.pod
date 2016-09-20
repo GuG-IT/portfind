@@ -1,0 +1,71 @@
+=head1 NAME
+
+portfind -    find ports with detailed and short view
+
+=head1 SYNOPSIS
+
+portfind [-a] [-d] [-p] [-m] [-D] [-f] [-n] [-r] [-h] [-v] search_word
+
+=head1 DESCRIPTION
+
+portfind finds ports by name (default). It is able to search in other
+fields than name (see OPTIONS). It also looks if a port is already
+installed and tells the user the installed version number.
+
+portfind uses B</usr/ports/INDEX-X> (X stands for the version) and
+B</var/db/pkg>. Please be sure, you updated your index file (cd to
+/usr/ports and do make index) after every port sync.
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<Without options>	the search only matches the name of the ports
+
+=item B<-a>				Search in all fields
+
+=item B<-d>				Search in name and in description
+
+=item B<-p>				Search in name and in path
+
+=item B<-m>				Search in name and maintainer
+
+=item B<-D>				Search in name and dependencies
+
+=item B<-f>				Show result with dependencies
+
+=item B<-n>				Show normal version of results (short version is default)
+
+=item B<-r>				Show result count
+
+=item B<-h>				Print this help text
+
+=item B<-v>				Print version number
+
+=back
+
+=head1 EXAMPLES
+
+Find port by name and return a full list view
+
+	# portfind search_word
+
+Search in all fields and return a short list view with extended informations
+
+	# portfind -fa search_word
+
+Search in all fields and return a normal list view
+
+	# portfind -na search_word
+
+Search port by name and return a full list view with result count and dependencies
+
+	# portfind -fx search_word
+
+=head1 AUTHOR
+
+Thorsten Geppert (tgeppert@gug-it.de)
+
+=head1 SEE ALSO
+
+I<make search> in I</usr/ports>
