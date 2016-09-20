@@ -1,4 +1,4 @@
-# Copyright 2015 Thorsten Geppert (tgeppert@gug-it.de). All rights reserved.
+# Copyright 2016 Thorsten Geppert (tgeppert@gug-it.de). All rights reserved.
 # 
 # Redistribution and use in source and binary forms, with or without modification, are
 # permitted provided that the following conditions are met:
@@ -32,7 +32,7 @@ LIBS      = -lsqlite3 -L/usr/local/lib
 INCS      = -I/usr/local/include
 BIN       = portfind
 CFLAGS    = -O3 -Wall
-VERSION   = "1.6.2"
+VERSION   = "1.6.3"
 
 all: $(BIN) doc
 

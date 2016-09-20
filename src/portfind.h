@@ -1,5 +1,5 @@
 /*
-* Copyright 2015 Thorsten Geppert (tgeppert@gug-it.de). All rights reserved.
+* Copyright 2016 Thorsten Geppert (tgeppert@gug-it.de). All rights reserved.
 * 
 * Redistribution and use in source and binary forms, with or without modification, are
 * permitted provided that the following conditions are met:
@@ -34,11 +34,11 @@
 #define PKG_DB					"/var/db/pkg/local.sqlite"
 #define COL_COUNT				9
 
-#define APPLICATION_VERSION		"1.6.2"
+#define APPLICATION_VERSION		"1.6.3"
 #define APPLICATION_NAME		"portfind"
 #define APPLICATION_COMPANY		"GuG-IT GbR - Olena und Thorsten Geppert"
 #define APPLICATION_AUTHOR		"Thorsten Geppert (tgeppert@gug-it.de)"
-#define APPLICATION_DATE		"2015-08-02"
+#define APPLICATION_DATE		"2016-06-11"
 #define FIRST_RELEASE_DATE		"2010-08-30"
 
 typedef enum col {

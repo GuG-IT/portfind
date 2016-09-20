@@ -64,7 +64,7 @@ Search port by name and return a full list view with result count and dependenci
 
 =head1 AUTHOR
 
-Thorsten Geppert (tgeppert@gug-it.de)
+Thorsten Geppert (tgeppert@gut-it.de)
 
 =head1 SEE ALSO
 
